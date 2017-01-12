@@ -3,18 +3,18 @@
     "pages/index/index",
     "pages/logs/logs"
   ],
-  "window":{
+  "window": {
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#000000",
     "navigationBarTitleText": "XXX店",
     "navigationBarTextStyle":"white"
   },
-  "tabBar":{
+  "tabBar": {
     "list": [{
       "pagePath": "pages/index/index",
-      "text": "首页",
-      "iconPath": "pages/img/01_home_page.png",
-      "selectedIconPath": "pages/img/01_home_page.png"
+      "text": "HOME",
+      "iconPath": "/img/index_normal.png",
+      "selectedIconPath": "img/index_pressed.png"
     }, {
       "pagePath": "pages/logs/logs",
       "text": "日志"
