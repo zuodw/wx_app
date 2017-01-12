@@ -12,6 +12,10 @@ Page({
     })
   },
   onShareAppMessage: function () {
-    
+    return {
+      title: 'zuodw_wx_app',
+      desc: '[wx app by zuodw]',
+      path: '/pages/logs/logs'
+    }
   }
 })

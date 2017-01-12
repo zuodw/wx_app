@@ -5,19 +5,21 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#0000FF",
+    "navigationBarBackgroundColor": "#000000",
     "navigationBarTitleText": "XXX店",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"white"
   },
   "tabBar":{
     "list": [{
       "pagePath": "pages/index/index",
-      "text": "首页"
+      "text": "首页",
+      "iconPath": "pages/img/01_home_page.png",
+      "selectedIconPath": "pages/img/01_home_page.png"
     }, {
       "pagePath": "pages/logs/logs",
       "text": "日志"
     }],
-    "backgroundColor":"#87CEFA",
+    "backgroundColor":"#FFFFFF",
     "selectedColor":"#FFA500",
     "borderStyle":"black",
     "position":"top"
