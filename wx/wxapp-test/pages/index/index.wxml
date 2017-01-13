@@ -15,11 +15,13 @@
       <!--菜单列表-->
       <block wx:for="{{menu}}"  wx:key="id">
         <view class="menu-item" data-id="{{item.id}}" data-tag="{{item.tag}}" bindtap="selectMenu">
-          <view>
-            <text class="menu-item-title">{{item.name}}</text>
+          <view class="m-item">
+            <view>
+              <text class="menu-item-title">{{item.name}}</text>
+            </view>
           </view>
-          </view>
-        </block>
+         </view>
+      </block>
     </scroll-view>
   </view>
 </view>

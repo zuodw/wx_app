@@ -10,11 +10,11 @@
     height: 100%;
 }
 /* left side */
-/*
-.menu-item{
+
+.m-item{
   text-align: center
 }
-*/
+
 .menu-item-title{
   font-size: 24rpx;
   color: black
@@ -45,9 +45,9 @@
   border-radius: 50%
 }
 .left-side{
-  height: 700rpx;
-  display:flex;
+  height: 800rpx;
   width: 200rpx;
-  background-color: #FFFFFF;
+  display:flex;
+  background-color: lightblue;
   flex-direction:column;
 }
