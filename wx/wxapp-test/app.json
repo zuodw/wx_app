@@ -12,17 +12,19 @@
   "tabBar": {
     "list": [{
       "pagePath": "pages/index/index",
-      "text": "HOME",
-      "iconPath": "/img/index_normal.png",
-      "selectedIconPath": "img/index_pressed.png"
+      "iconPath": "resource/img/index_normal.png",
+      "selectedIconPath": "resource/img/index_pressed.png",
+      "text": "HOME"
     }, {
       "pagePath": "pages/logs/logs",
+      "iconPath": "resource/img/explore_normal.png",
+      "selectedIconPath": "resource/img/explore_pressed.png",
       "text": "日志"
     }],
     "backgroundColor":"#FFFFFF",
     "selectedColor":"#FFA500",
     "borderStyle":"black",
-    "position":"top"
+    "position":"bottom"
   },
     "debug": true
 }

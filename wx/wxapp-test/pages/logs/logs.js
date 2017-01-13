@@ -1,21 +1,12 @@
 //logs.js
-var util = require('../../utils/util.js')
 Page({
-  data: {
-    logs: []
-  },
-  onLoad: function () {
-    this.setData({
-      logs: (wx.getStorageSync('logs') || []).map(function (log) {
-        return util.formatTime(new Date(log))
-      })
-    })
-  },
-  onShareAppMessage: function () {
-    return {
-      title: 'zuodw_wx_app',
-      desc: '[wx app by zuodw]',
-      path: '/pages/logs/logs'
-    }
-  }
+data: {
+    slider: [
+'http://y.gtimg.cn/music/photo_new/T003R720x288M000000rVobR3xG73f.jpg',
+'http://y.gtimg.cn/music/photo_new/T003R720x288M000000j6Tax0WLWhD.jpg',
+'http://y.gtimg.cn/music/photo_new/T003R720x288M000000a4LLK2VXxvj.jpg'
+    ],
+    indicatorDots: true,
+    swiperCurrent: 0
+},
 })

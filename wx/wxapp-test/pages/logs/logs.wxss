@@ -1,8 +1,11 @@
-.log-list {
-  display: flex;
-  flex-direction: column;
-  padding: 40rpx;
+/**log.wxss**/
+.swiper-container{
+    position: relative;
 }
-.log-item {
-  margin: 10rpx;
+.swiper-container .swiper{
+    height: 300rpx;
+}
+.swiper-container .img{
+    width: 100%;
+    height: 100%;
 }

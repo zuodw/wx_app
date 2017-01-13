@@ -1,33 +1,26 @@
 //index.js
-//获取应用实例
-var order = ['a', 'b', 'c', 'd', 'a']
+//import left from './resources/js/menu.js'
 Page({
   data: {
-    toView: 'a',
-    scrollTop: 100
+    imgUrls: [
+'http://y.gtimg.cn/music/photo_new/T003R720x288M000000rVobR3xG73f.jpg',
+'http://y.gtimg.cn/music/photo_new/T003R720x288M000000j6Tax0WLWhD.jpg',
+'http://y.gtimg.cn/music/photo_new/T003R720x288M000000a4LLK2VXxvj.jpg',
+'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
+    ],
+    indicatorDots: true,
+    autoplay: true,
+    interval: 5000,
+    duration: 1000,
+    swiperCurrent: 0,
+    
+    menu: "menu"
   },
-  upper: function(e) {
-    console.log(e)
-  },
-  lower: function(e) {
-    console.log(e)
-  },
-  scroll: function(e) {
-    console.log(e)
-  },
-  tap: function(e) {
-    for (var i = 0; i < order.length; ++i) {
-      if (order[i] === this.data.toView) {
-        this.setData({
-          toView: order[i + 1]
-        })
-        break
-      }
-    }
-  },
-  tapMove: function(e) {
+   selectMenu:function(event){
+    let item = event.currentTarget.dataset
     this.setData({
-      scrollTop: this.data.scrollTop + 10
+      toView: item.tag
     })
-  }
+    // this.data.toView = 'red'
+  },
 })
